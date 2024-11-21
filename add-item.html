@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Barang - Barang Berfaedah</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tambah Barang</h1>
+        <a href="index.php" class="back-button">Kembali</a>
+    </header>
+    <br>
+    <br>
+    <main>
+        <form id="add-item-form" action="add-item.php" method="POST">
+            <label for="name">Nama Barang:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="description">Deskripsi:</label>
+            <textarea id="description" name="description" required></textarea>
+            
+            <label for="price">Harga (Opsional):</label>
+            <input type="number" id="price" name="price">
+            
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="Tersedia">Tersedia</option>
+                <option value="Tidak Tersedia">Tidak Tersedia</option>
+            </select>
+            
+            <button type="submit">Tambah Barang</button>
+        </form>
+    </main>
+<br>
+</body>
+<footer>
+    <p>&copy; 2024 FKM. Semua Hak Dilindungi.</p>
+</footer>
+</html>
